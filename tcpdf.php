@@ -19749,7 +19749,8 @@ Putting 1 is equivalent to putting 0 and calling Ln() just after. Default value:
 				break;
 			}
 			case 'a': {
-				$this->HREF = '';
+				//fix for php 7.1
+				$this->HREF = [];
 				break;
 			}
 			case 'sup': {
